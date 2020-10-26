@@ -12,7 +12,8 @@ int main(){
     printf("lab1>");
     char input[MAX_LEN];
     scanf("%s",input);
-    for(int i = 0; input[i]; i++){
+    int i;
+    for(i = 0; input[i]; i++){
       input[i] = tolower(input[i]);
     }
     printf("Parent process %d\n", getpid());
